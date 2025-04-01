@@ -1,0 +1,22 @@
+
+/* 熱量計算器 */
+#daliyheat_block {
+    border: 2px solid red; 
+    list-style-type: none;
+}
+
+/* BMR計算器 */
+#bmrCalculate_div{
+    border: 2px solid red;
+}
+
+/* BMI計算器 */
+#bmiCalculate_div{
+    border: 2px solid red;
+}
+
+
+
+li { 
+    list-style-type: none;
+}
