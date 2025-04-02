@@ -21,37 +21,34 @@ li {
 
 /* BMI計算器 */
 #Two_block_calculate_result {
-    font-size: 50px;
+    font-size: 40px;
     position:fixed;
     top:50%;
     left:50%;
-    background-color: aqua;
+    background: linear-gradient(120deg, rgb(36, 110, 100) ,rgb(86, 6, 118));
     display: flex-grow;
-    border:2px solid red;
+    border:2px solid rgb(71, 73, 8);
     height: 600px;
     width: 80%;
     transform: translate(-50%, -50%);
+    float: left;
 }
-
+/* BMI水平對齊 */
+#Two_block_calculate_result {
+    display:flex;
+    justify-content:space-around;
+}
 /* #Two_block_calculate_result > div {
     margin: 20xp;
 } */
-#bmiCalculate_div{
+#bmiCalculate_div, #bmi_result_Block{
     border: 2px solid red;
-    width:50%;
-    height :500px;
-    
+    width:46%;
+    height :550px;
+    margin: auto;
 }
-#bmi_result_Block {
-    border: 2px solid red;
-    width: 400px;
-    height: 500px;
-    /* top :200px;
-    width: 500px;
-    height: 500px; */
-}
-
-
+/* bmi計算器文字大小 */
+/* 按鈕大小配置 */
 
 /* 最上層下拉式選單 */
 #Top_ListBlock {

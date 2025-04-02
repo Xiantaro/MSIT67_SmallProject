@@ -32,7 +32,7 @@ function bmiCalculate() {
   } else if (bmi < 18.5) {
     resultText = "體重過輕..";
   }
-  input_result_bmi.textContent = `你的BMI是: ${bmi},${resultText}。`;
+  input_result_bmi.textContent = `${bmi},${resultText}。`;
 }
 // BMI清除按鈕
 function bmi_clean() {
