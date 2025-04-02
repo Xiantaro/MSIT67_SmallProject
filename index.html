@@ -13,24 +13,27 @@
     <!-- BMI計算器 -->
      <div id="Two_block_calculate_result">
         <div id="bmiCalculate_div">
-          <ul >
-            <label>BMI計算器</label>
-            <li>
+          <label id="Name_bmicalcuate">BMI計算器</label>
+
+          <ul id="ul_input_bmicalculate">
+            <div id="height_weigth">
+              <li class="li_height_block">
                 <label for="bmi_input_height">身高:</label>
                 <input type="number" id ="bmi_input_height" placeholder="請輸入身高(cm)" required>
-            </li>
-            <li>
-                <label for="bmi_input_weight">體重:</label>
-                <input type="number" id ="bmi_input_weight" placeholder="請輸入體重(kg)" required>
-            </li>
-            <div>
-              <button id="buttom_calculate_bmi">計算</button>
-              <button id="buttom_clean_bmi">清除</button>
+              </li>
+              <li class="li_weight_block">
+                  <label for="bmi_input_weight">體重:</label>
+                  <input type="number" id ="bmi_input_weight" placeholder="請輸入體重(kg)" required>
+              </li>
             </div>
-            <div>
+
+            <div class="button_block">
+              <button class="button" id="buttom_calculate_bmi">計算</button>
+              <button class="button" id="buttom_clean_bmi">清除</button>
+            </div>
+            <div class="button_block">             
               
-              <br>
-              <button id="bmi_reset">重新計算</button>
+              <button class="button" id="bmi_reset">重新計算</button>
             </div>
           </ul>
         </div>
