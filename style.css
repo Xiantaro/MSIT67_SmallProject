@@ -46,7 +46,7 @@ li {
     height: 430px;
 }
 #bmiCalculate_div, #bmi_result_Block{
-    border: 2px solid red;
+    border: 2px solid rgb(233, 208, 208);
     width:46%;
     height :550px;
     margin: auto;
