@@ -1,3 +1,12 @@
+body {
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+}
+/* li列表開頭符號 */
+li { 
+    list-style-type: none;
+}
 
 /* 熱量計算器 */
 #daliyheat_block {
@@ -11,12 +20,46 @@
 }
 
 /* BMI計算器 */
+#Two_block_calculate_result {
+    font-size: 50px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    background-color: aqua;
+    display: flex-grow;
+    border:2px solid red;
+    height: 600px;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+/* #Two_block_calculate_result > div {
+    margin: 20xp;
+} */
 #bmiCalculate_div{
     border: 2px solid red;
+    width:50%;
+    height :500px;
+    
+}
+#bmi_result_Block {
+    border: 2px solid red;
+    width: 400px;
+    height: 500px;
+    /* top :200px;
+    width: 500px;
+    height: 500px; */
 }
 
 
 
-li { 
-    list-style-type: none;
+/* 最上層下拉式選單 */
+#Top_ListBlock {
+    width: 100%;
+    position: relative;
+    height: 40px;
+    left:0;
+    top:0;
+    background-color: red;
+    
 }
