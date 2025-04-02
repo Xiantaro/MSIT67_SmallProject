@@ -25,7 +25,7 @@ li {
     position:fixed;
     top:50%;
     left:50%;
-    background: linear-gradient(120deg, rgb(36, 110, 100) ,rgb(86, 6, 118));
+    background: linear-gradient(40deg,rgb(75, 122, 233), rgb(49, 229, 127) ,rgb(208, 223, 123),rgb(238, 173, 121), rgb(233, 105, 105),rgb(231, 37, 37));
     display: flex-grow;
     border:2px solid rgb(71, 73, 8);
     height: 600px;
@@ -102,7 +102,8 @@ ul {
     display: block;
     text-align: center;
     font-size: 50px;
-    color:wheat;
+    color:rgb(149, 47, 47);
+    
 }
 table {
     width: 100%;
