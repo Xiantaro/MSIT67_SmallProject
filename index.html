@@ -37,8 +37,45 @@
             </div>
           </ul>
         </div>
+        <!-- 右邊結果區塊 -->
         <div id="bmi_result_Block">
-          <label id="bmi_result">你的BMI是: </label>
+          <div id="image_bmi_range"><label>
+            <table>
+              <tr >
+                <th class="bmi_table_title" colspan="2">成人肥胖定義</th>
+                <th  class="bmi_table_title" colspan="2">身體質量BMI</thvc>
+              </tr>
+              <tr>
+                <td class="bmi_table_light" colspan="2">過輕</td>
+                <td class="bmi_table_light" colspan="2">BMI < 18.5</td>
+              </tr>
+              <tr>
+                <td class="bmi_table_health"colspan="2">健康</td>
+                <td class="bmi_table_health" colspan="2">18.5 ≤ BMI ≤ 24.5</td>
+              </tr>
+              <tr>
+                <td class="bmi_table_dammger" rowspan="5">異常</td>
+              </tr>
+              <tr>
+                <td class="bmi_table_dammger">過重</td>
+                <td class="bmi_table_dammger">24 ≤ BMI < 27</td>
+              </tr>
+              <tr>               
+                <td class="bmi_table_dammger">輕度肥胖</td>
+                <td class="bmi_table_dammger">27 ≤ BMI < 30</td>
+              </tr>
+              <tr>
+                <td class="bmi_table_dammger">中度肥胖</td>
+                <td class="bmi_table_dammger">3 ≤ BMI < 35</td>
+              </tr>
+              <tr>
+                <td class="bmi_table_dammger">重度肥胖</td>
+                <td class="bmi_table_dammger">BMI  ≥  35</td>
+              </tr>
+            </table>
+          </label></div>
+          <label id="your_bmi">你的BMI是: </label>
+          <label id="bmi_result"></label>
         </div>
       </div>
       
