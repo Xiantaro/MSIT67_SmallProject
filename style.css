@@ -1,7 +1,11 @@
-body {
+#background_body {
+    position:absolute;
+    top:0;
+    left:0;
     background-image: url("/XT5X1474.JPG");
     background-size: 100vw 100vh;
     object-fit: none;
+    opacity: 0.8;
     margin:0;
     width: 100vw;
     height: 100vh;
@@ -168,7 +172,7 @@ table,th, td {
 /* 最上層下拉式選單 */
 #Top_ListBlock {
     width: 100%;
-    position: relative;
+    position: absolute;
     height: 60px;
     left:0;
     top:0;
@@ -178,9 +182,11 @@ table,th, td {
     transition-duration: 0.5s;
 }
 #Top_ListBlock:hover {
-    background-color: rgb(208, 210, 214);
-
+    background-color: rgba(255, 241, 204, 0.811);
+    opacity: 0.6;
     color:black;
 
     cursor:pointer
 }
+
+
