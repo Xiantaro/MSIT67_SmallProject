@@ -7,120 +7,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="Top_ListBlock">最上層下拉選單</div>
     <!-- 計算器選單 -->
 <!--------------------------------------------------------->
     <!-- BMI計算器 -->
-    <div id="bmiCalculate_div">
-      <ul >
-        <label>BMI計算器</label>
-        <li>
-            <label for="bmi_input_height">身高:</label>
-            <input type="number" id ="bmi_input_height" placeholder="請輸入身高(cm)" required>
-        </li>
-        <li>
-            <label for="bmi_input_weight">體重:</label>
-            <input type="number" id ="bmi_input_weight" placeholder="請輸入體重(kg)" required>
-        </li>
-        <div>
-          <button id="buttom_calculate_bmi">計算</button>
-          <button id="buttom_clean_bmi">清除</button>
+     <div id="Two_block_calculate_result">
+        <div id="bmiCalculate_div">
+          <ul >
+            <label>BMI計算器</label>
+            <li>
+                <label for="bmi_input_height">身高:</label>
+                <input type="number" id ="bmi_input_height" placeholder="請輸入身高(cm)" required>
+            </li>
+            <li>
+                <label for="bmi_input_weight">體重:</label>
+                <input type="number" id ="bmi_input_weight" placeholder="請輸入體重(kg)" required>
+            </li>
+            <div>
+              <button id="buttom_calculate_bmi">計算</button>
+              <button id="buttom_clean_bmi">清除</button>
+            </div>
+            <div>
+              <label id="bmi_result">你的BMI是: </label>
+              <br>
+              <button id="bmi_reset">重新計算</button>
+            </div>
+          </ul>
         </div>
-        <div>
-          <label id="bmi_result">你的BMI是: </label>
-          <br>
-          <button id="bmi_reset">重新計算</button>
+        <div id="bmi_result_Block">
+          <label>結果</label>
         </div>
+      </div>
+      
+ 
 
-      </ul>
-    </div>
-<!------------------------------------------------------->
-    <!-- 熱量計算器 -->
-    <div id="daliyheat_block">
-      <ul>
-        <label>熱量記計算器</label>
-        <li>
-          <label>工作量</label>
-          <label><input type="radio" id="dailyheat_lightwork" name="job" value="light"/>
-          輕度工作</label>
-          <label><input type="radio" id="dailyheat_midwork" name="job" value="mid"/>
-          中度工作</label>
-          <label><input type="radio" id="dailyheat_heavywork" name="job" value="heavy"/>
-          重度工作</label>
-        </li>
-        <li>
-          <label>生理性別</label>
-          <label><input type="radio" id="dailyheat_genderMale" name="gender" value="male"/>
-          男(male)</label>
-          <label><input type="radio" id="dailyheat_genderFemale" name="gender" value="female"/>
-          女(female)</label>
-        </li>
-        <li>
-          <label>年齡</label>
-          <input type="number" id="dailyheat_age" placeholder="請輸入年齡(age)" value="age" required min="10" max="120"/>
-        </li>
-        <li>
-          <label>身高</label>
-          <input type="number" id="dailyheat_height" placeholder="請輸入身高(cm)" value="height" required min="100" max="250"/>
-        </li>
-        <li>
-          <label>體重</label>
-          <input type="number" id="dailyheat_weight" placeholder="請輸入體重(kg)" value="weight" required min="30" max="300"/>
-        </li>
-        <div>
-          <button type="button" id="dailyheat_calculate">計算</button>
-          <button type="button" id="dailyheat_clean">清除</button>
-        </div>
-        <div>
-          <li><label id="dailyheat_result">結果: </label></li>
-          <button type="button" id="dailyheat_reset">重新計算</button>
-        </div>
-      </ul>
-    </div>
-<!------------------------------------------------------->
-    <!-- BMR計算器 -->
-    <div id="bmrCalculate_div">
-      <ul>
-        <label>BMR計算器</label>
-        <li>
-            <label>生理性別:</label>
-            </label><input type="radio" name="bmr_gender" id="bmrGender_male" value="male">男姓
-            <label>
-            </label><input type="radio" name="bmr_gender" id="bmrGender_female" value="female" checked>女性
-            <label>
-        </li>
-        <li>
-            <label>年齡:</label>
-            <input type="number" placeholder="請輸入年齡" id="bmr_age" min="1" max="120">
-        </li>
-        <li>
-            <label>身高:</label>
-            <input type="number" placeholder="請輸入身高" id="bmr_height" min="100" max="272">
-        </li>
-        <li>
-            <label>體重:</label>
-            <input type="number" placeholder="請輸入體重" id="bmr_weight" min="20" max="635">
-        </li>
-        <li>
-          <div>
-            <button type="button" id="bmr_calculate">計算</button>
-            <button type="button" id="bmr_clean">清除</button>
-          </div>
-        </li>
-        <li>
-          <div>
-            <label id="bmr_result">結果: </label><br>
-            <button type="button" id="bmr_reset">重新計算</button>
-          </div>
-        </li>
-      </ul>
-    </div>
 <!-- 卡路里計算器 -->
-    <div>
-      <ul>
-        <label>食物卡路里計算器</label>
-        <li></li>
-      </ul>
-    </div>
 <!-- 樂透冥牌機 -->
 <!-- 計算機 -->
 <!-- 一個人的黑白配 -->
