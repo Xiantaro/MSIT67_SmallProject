@@ -13,6 +13,14 @@ input_reset_bmi.addEventListener("click", bmi_reset); //重新計算****
 function bmiCalculate() {
   let height = parseFloat(input_height_bmi.value);
   let weight = parseFloat(input_weight_bmi.value);
+  if (height >= 272)
+    return window.alert(
+      "身高超越Robert Pershing Wadlow!,你成為歷史上最高的人。"
+    );
+  if (weight >= 635)
+    return window.alert(
+      "體重超越Jon Brower Minnoch!,你成為歷史上最重(胖)的人。"
+    );
   // BMI = 體重(公斤) / 身高**2(公尺**)
   if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
     alert("請輸入有效的身高體重數值....");
