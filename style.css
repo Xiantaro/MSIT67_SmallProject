@@ -1,5 +1,7 @@
 body {
-    background-color: black;
+    background-image: url("/XT5X1474.JPG");
+    background-size: 100vw 100vh;
+    object-fit: none;
     margin:0;
     width: 100vw;
     height: 100vh;
@@ -28,13 +30,11 @@ li {
 /* -------------------------------------------------------------------- */
 /* BMI計算器 */
 #Two_block_calculate_result {
-
-    position:fixed;
+    position:absolute;
     top:50%;
     left:50%;
-    background: linear-gradient(40deg,rgb(75, 122, 233), rgb(49, 229, 127) ,rgb(208, 223, 123),rgb(238, 173, 121), rgb(233, 105, 105),rgb(231, 37, 37));
-    display: flex-grow;
-    border:2px solid rgb(71, 73, 8);
+    background: linear-gradient(40deg,rgb(153, 173, 219), rgb(49, 229, 127) ,rgb(208, 223, 123),rgb(238, 173, 121), rgb(233, 105, 105),rgb(231, 37, 37));
+    border-radius: 30px;
     height: 600px;
     width: 80%;
     transform: translate(-50%, -50%);
@@ -52,7 +52,8 @@ li {
     height: 430px;
 }
 #bmiCalculate_div, #bmi_result_Block{
-    border: 2px solid rgb(233, 208, 208);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
     width:46%;
     height :550px;
     margin: auto;
@@ -82,10 +83,12 @@ ul {
 
 /* 按鈕大小配置 */
 #bmi_input_height, #bmi_input_weight {
+    padding-left: 30px;
     width:80%;
     height: 40px;
     border: none;;
     border-radius: 20px;
+    padding: 3px, 10px;
 }
 .button {
     transition-duration: 0.3s;
@@ -114,12 +117,15 @@ ul {
     background-color: rgb(218, 189, 146);
     color:white;
 }
+
 /* 右邊區塊 */
-#image_bmi_range {
+/* #image_bmi_range {
     
+} */
+#image_bmi_range {
 
     height: 400px;
-    background-color: white;
+
 }
 #your_bmi,#bmi_result {
     display: block;
@@ -142,6 +148,7 @@ table,th, td {
 /* 表單顏色 */
 .bmi_table_title {
     background-color: rgb(200, 188, 188);
+    border-radius: 20px 20px 0px 0px;
     font-size: 18px;
 }
 .bmi_table_light {
@@ -162,9 +169,18 @@ table,th, td {
 #Top_ListBlock {
     width: 100%;
     position: relative;
-    height: 40px;
+    height: 60px;
     left:0;
     top:0;
-    background-color: red;
-    
+    text-align: center;
+    font-size: 40px;
+    color:antiquewhite;
+    transition-duration: 0.5s;
+}
+#Top_ListBlock:hover {
+    background-color: rgb(208, 210, 214);
+
+    color:black;
+
+    cursor:pointer
 }

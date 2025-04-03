@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="Top_ListBlock">最上層下拉選單</div>
+    <div id="Top_ListBlock">
+      <span id="Top_menu_icon">&#9776;</span>
+      <span id="Top_man_icon"></span>
+    </div>
     <!-- 計算器選單 -->
 <!--------------------------------------------------------->
     <!-- BMI計算器 -->
@@ -39,8 +42,7 @@
         </div>
         <!-- 右邊結果區塊 -->
         <div id="bmi_result_Block">
-          <div id="image_bmi_range"><label>
-            <table>
+            <table id="image_bmi_range">
               <tr >
                 <th class="bmi_table_title" colspan="2">成人肥胖定義</th>
                 <th  class="bmi_table_title" colspan="2">身體質量BMI</thvc>
@@ -73,7 +75,6 @@
                 <td class="bmi_table_dammger">BMI  ≥  35</td>
               </tr>
             </table>
-          </label></div>
           <label id="your_bmi">你的BMI是: </label>
           <label id="bmi_result"></label>
         </div>
