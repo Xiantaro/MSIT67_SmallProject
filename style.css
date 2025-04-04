@@ -189,4 +189,14 @@ table,th, td {
     cursor:pointer
 }
 
+/* 我的最愛 */
+#my_love {
+    color: rgb(0, 0, 0);
+    font-size: 150px;
+    position: absolute;
+    left: -1%;
+    top: -11%;
+    rotate:-20deg;
+    cursor:pointer;
+}
 
