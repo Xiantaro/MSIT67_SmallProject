@@ -190,11 +190,11 @@ table,th, td {
 }
 /* 菜單 選單*/
 #menu_list {
-    /* display: none; */
+    display: none;
     position: absolute;
     width: 90%;
-    height:700px;
-    top:8%;
+    height:90%;
+    top:4%;
     left:5%;
     background-color: bisque;
 }
@@ -205,6 +205,46 @@ table,th, td {
     top:-3%;
     cursor:pointer;
 }
+/* Icon */
+#memu_list_title_search,#search_list_icon {
+    cursor:pointer;
+}
+#search_list_icon {
+    width: 60px;
+    font-size: 40px;
+    border: 1px solid white;
+    color: white;
+
+}
+/* search Block */
+#menu_list_searchBlock{
+    background-color: red;
+    display: block;
+    height: 60px;
+    font-size: 20px ;
+    padding-left: 40%;
+}
+#searchBlock_text, #type_list {
+    height: 40px;
+    margin-right: 20px 20px;
+}
+/* 搜尋內三個選項div */
+#menu_list_searchBlock_3 {
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border: 20px;
+    font-size: 30px;
+}
+#searchBlock_reach {
+    padding:auto;
+    margin-right: 20px;
+}
+.search_all {
+    margin-right: 20px;
+}
+
 #menu_list_TitleDiv {
     background-color: aqua;
     width: 100%;
