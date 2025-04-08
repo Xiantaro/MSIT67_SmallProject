@@ -11,9 +11,9 @@
 /* 內容區塊 */
 #Mid_Content {
     width: 100%;
-
     position: relative;
     background-color: rgb(180, 225, 227);
+
 }
 
 /* 內容區塊2 */
@@ -31,18 +31,50 @@
     justify-items: center;
     align-items: center;
     background-color: aqua;
+    cursor: pointer;
     color: red;
     width:10%;
     height: 200px;
-    border: 2px solid red;
+    border: 2px solid rgb(184, 161, 161);
     margin: 30px 20px   ;
 }
+/* 中間文字介紹區塊 */
+#Mid_introduce {
+
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 250px;
+    background-color: rgb(250, 247, 156);
+}
+/* 文字介紹區塊主要內容 */
+#Mid_introduce_text {
+    position:absolute;
+    top:0px;
+    left:10%;
+    width: 80%;
+    height: 300px;
+    background-color: white;
+}
+#Mid_introduce_text_Name {
+    font-size: 90px;
+    padding-left: 20px;
+}
+#Mid_introduce_text_word {
+    height: 41.9%;
+    font-size: 25px;
+    padding: 20px;
+}
+#Mid_introduce_text_Name ,#Mid_introduce_text_word {
+    background-color: rgb(221, 198, 175);
+}
+
 /* 社交媒體Icon */
 #Under_SocialMedia {
     position:absolute;
     width: 100%;
     height: 79px;
-    background-color: blue;
+    background-color: rgb(253, 220, 136);
     bottom: 21.6px;
 }
 /* 頁尾 */
