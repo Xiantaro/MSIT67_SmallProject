@@ -4,45 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMR計算器</title>
+    <link rel="stylesheet" href="./style_brm.css">
 </head>
 <body>
     <!------------------------------------------------------->
     <!-- BMR計算器 -->
-    <div id="bmrCalculate_div">
-        <ul>
-          <label>BMR計算器</label>
-          <li>
-              <label>生理性別:</label>
-              </label><input type="radio" name="bmr_gender" id="bmrGender_male" value="male">男姓
-              <label>
-              </label><input type="radio" name="bmr_gender" id="bmrGender_female" value="female" checked>女性
-              <label>
-          </li>
-          <li>
-              <label>年齡:</label>
-              <input type="number" placeholder="請輸入年齡" id="bmr_age" min="1" max="120">
-          </li>
-          <li>
-              <label>身高:</label>
-              <input type="number" placeholder="請輸入身高" id="bmr_height" min="100" max="272">
-          </li>
-          <li>
-              <label>體重:</label>
-              <input type="number" placeholder="請輸入體重" id="bmr_weight" min="20" max="635">
-          </li>
-          <li>
-            <div>
-              <button type="button" id="bmr_calculate">計算</button>
-              <button type="button" id="bmr_clean">清除</button>
-            </div>
-          </li>
-          <li>
-            <div>
-              <label id="bmr_result">結果: </label><br>
-              <button type="button" id="bmr_reset">重新計算</button>
-            </div>
-          </li>
-        </ul>
+     <!-- 背景 -->
+    <div id="background_body"></div>
+    <div></div>
+    <!-- 主要計算顯示區塊 -->
+    <div Id="#Two_block_calculate_result">
+      <!-- 左邊區塊 -->
+      <div id="bmrCalculate_div">
+          <ul>
+            <label>BMR計算器</label>
+            <li>
+                <label>生理性別:</label>
+                </label><input type="radio" name="bmr_gender" id="bmrGender_male" value="male">男姓
+                <label>
+                </label><input type="radio" name="bmr_gender" id="bmrGender_female" value="female" checked>女性
+                <label>
+            </li>
+            <li>
+                <label>年齡:</label>
+                <input type="number" placeholder="請輸入年齡" id="bmr_age" min="1" max="120">
+            </li>
+            <li>
+                <label>身高:</label>
+                <input type="number" placeholder="請輸入身高" id="bmr_height" min="100" max="272">
+            </li>
+            <li>
+                <label>體重:</label>
+                <input type="number" placeholder="請輸入體重" id="bmr_weight" min="20" max="635">
+            </li>
+            <li>
+              <div>
+                <button type="button" id="bmr_calculate">計算</button>
+                <button type="button" id="bmr_clean">清除</button>
+              </div>
+            </li>
+            <li>
+              <div>
+                <label id="bmr_result">結果: </label><br>
+                <button type="button" id="bmr_reset">重新計算</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      <!-- 右邊區塊 -->
+      <div>
+        <div></div>
       </div>
+    </div>
+    
 </body>
 </html>
