@@ -34,6 +34,7 @@ li {
 /* -------------------------------------------------------------------- */
 /* BMI計算器 */
 #Two_block_calculate_result {
+    display:flex;
     position:absolute;
     top:50%;
     left:50%;
@@ -43,10 +44,6 @@ li {
     width: 80%;
     transform: translate(-50%, -50%);
     float: left;
-}
-/* BMI水平對齊 */
-#Two_block_calculate_result {
-    display:flex;
     justify-content:space-around;
 }
 
@@ -278,6 +275,14 @@ table,th, td {
     background-color: wheat;
     margin:20px auto;
 }
+/* 內容區塊顯示 */
+#menu_bmi, #menu_bmr,#menu_heat {
+    background-color: red;
+    color:white;
+    font-size: 35px;
+    text-align: center;
+    cursor: pointer;
+}
 /* ------------------------------------------------------------ */
 /* 我的最愛 */
 #my_love {
@@ -294,17 +299,17 @@ table,th, td {
 /* -------------------------------------------------------------- */
 /* -------------------------------------------------------------- */
 /* RWD 製作設計 */
-/* // Size 430px */
-@media screen and (max-width: 430px){ 
+/* RWD平板設計 */
+@media screen and (max-width: 768px){ 
     /* 1.愛心 */
     #my_love {
-        left: 1px;
-        font-size: 10px
+        left: -5%;
+        font-size: 150px
     }
     /* 2.bmi計算器標題 */
     #Name_bmicalcuate {
-        top: 10px;
-        font-size: 50px;
+        top: 20px;
+        font-size: 40px;
     }
     /* 3.身高體重 */
     ul {
@@ -315,58 +320,64 @@ table,th, td {
         margin: 0px;
     }
     #bmi_input_height, #bmi_input_weight {
-        width : 0px;
+        width : 220px;
     }
     /* 4. 計算、清除、重新計算按鈕 */
     .button_block {
         top: 29px;
-        left :10px;
+        left :50px;
     }
     .button {
         font-size: 20px;
-        height: 70px;
+        height: 65px;
         width: 125px;
     }
+    /* 結果 */
+    #bmi_result {
+        top: 20px;
+        font-size: 90px;
+    }
+
     /* 右邊區塊 */
     /* 5.右邊區塊 */
     .bmi_table_title {
-        font-size: 9px;
+        font-size: 60px;
+    }
+    .bmi_table_dammger {
+        font-size: 15px;
     }
     #your_bmi {
-        font-size: 16px;
+        font-size: 46px;
     }
     /* 6.下拉選單 */
     .menu_list_title {
-        font-size: 20px;
-        margin: auto 10px;
+        font-size: 40px;
+        margin: auto 50px;
     }
     /* 7.搜尋框 */
-    #searchBlock_reach {
-        font-size: 1px;
-        left: -20px;
-    }
     #menu_list_searchBlock {
-        padding-left: 0px;
+        padding-left: 50px;
         margin-right: 0px;
     }
     .search_all {
-        margin-right: 0px;
+        margin-right: 60px;
+        width: 200px;
     }
     #searchBlock_text {
-        width: 80px;
+        width: 300px;
     }
     #searchBlock_reach, #searchBlock_type, #searchBlock_list {
-        color:transparent;
+       color:transparent;
     }
-    /* 8.X  */
+    /* 8.取消X  */
     #menu_list_cancle {
-        font-size: 70px;
+        font-size: 90px;
     }
 
     /* 9.區塊內容 */
     .menu_list_content_box {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 150px;
         margin: auto;
     }
 }
@@ -448,17 +459,17 @@ table,th, td {
     }
 }
 
-/* RWD平板設計 */
-@media screen and (max-width: 768px){ 
+/* // Size 430px */
+@media screen and (max-width: 430px){ 
     /* 1.愛心 */
     #my_love {
-        left: -5%;
-        font-size: 150px
+        left: 1px;
+        font-size: 1px
     }
     /* 2.bmi計算器標題 */
     #Name_bmicalcuate {
-        top: 20px;
-        font-size: 40px;
+        top: 10px;
+        font-size: 60px;
     }
     /* 3.身高體重 */
     ul {
@@ -469,58 +480,61 @@ table,th, td {
         margin: 0px;
     }
     #bmi_input_height, #bmi_input_weight {
-        width : 220px;
+        width : 0px;
     }
     /* 4. 計算、清除、重新計算按鈕 */
     .button_block {
         top: 29px;
-        left :50px;
+        left :10px;
     }
     .button {
         font-size: 20px;
-        height: 65px;
+        height: 70px;
         width: 125px;
     }
     /* 右邊區塊 */
     /* 5.右邊區塊 */
     .bmi_table_title {
-        font-size: 20px;
-    }
-    .bmi_table_dammger {
-        font-size: 15px;
+        font-size: 9px;
     }
     #your_bmi {
-        font-size: 46px;
+        font-size: 16px;
     }
     /* 6.下拉選單 */
     .menu_list_title {
-        font-size: 40px;
-        margin: auto 50px;
+        font-size: 20px;
+        margin: auto 10px;
     }
     /* 7.搜尋框 */
+    #searchBlock_reach {
+        font-size: 1px;
+        left: -20px;
+    }
     #menu_list_searchBlock {
-        padding-left: 50px;
+        padding-left: 0px;
         margin-right: 0px;
     }
     .search_all {
-        margin-right: 60px;
-        width: 200px;
+        margin-right: 0px;
     }
     #searchBlock_text {
-        width: 300px;
+        width: 80px;
     }
     #searchBlock_reach, #searchBlock_type, #searchBlock_list {
-       color:transparent;
+        color:transparent;
     }
-    /* 8.取消X  */
+    /* 8.X  */
     #menu_list_cancle {
-        font-size: 90px;
+        font-size: 70px;
     }
 
     /* 9.區塊內容 */
     .menu_list_content_box {
-        width: 200px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         margin: auto;
     }
 }
+
+
+

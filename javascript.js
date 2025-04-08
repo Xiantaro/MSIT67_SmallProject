@@ -32,7 +32,7 @@ function bmiCalculate() {
   bmi = bmi.toFixed(2);
   let resultText = "";
   if (bmi >= 27) {
-    resultText = "肥胖..";
+    resultText = "肥胖";
   } else if (bmi >= 24) {
     resultText = "體重過重";
   } else if (bmi >= 18.5) {
@@ -40,7 +40,7 @@ function bmiCalculate() {
   } else if (bmi < 18.5) {
     resultText = "體重過輕..";
   }
-  input_result_bmi.textContent = `${bmi},${resultText}。`;
+  input_result_bmi.textContent = `${bmi}`;
 }
 // BMI清除按鈕
 function bmi_clean() {
@@ -82,7 +82,13 @@ document.getElementById("memu_list_title_search").addEventListener("click", func
   let style = window.getComputedStyle(block);
   if (style.display === "none") block.style.display = "block";
   else block.style.display = "none";});
-
+// 顯示BMI
+document.getElementById("menu_bmi").addEventListener("click", function() {
+  let twoBlock = document.getElementById("Two_block_calculate_result");
+  let style = window.getComputedStyle(twoBlock);
+  if (style.display === "none") twoBlock.style.display = "flex";
+  else twoBlock.style.display = "none"
+})
 
 // ------------------------------------------------------- ------------------------------------------------------- ------------------------------------------------------- ------------------------------------------------------- -------------------------------------------------------
 // -----------------------我是分隔線------------------------------------------------------------ ------------------------------------------------------- ------------------------------------------------------- ------------------------------------------------------- ------------------
