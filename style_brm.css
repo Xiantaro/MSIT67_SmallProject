@@ -13,9 +13,6 @@
     width: 100vw;
     height: 100vh;
 }
-li {
-    list-style: none;
-}
 
 /* BMR計算器的 */
 #bmr_calculate_block {
@@ -29,11 +26,22 @@ li {
     flex-direction: column;
     left: 25%;
 }
+#bmrCalculate_div {
+    background-color: rgb(221, 226, 226);
+    opacity: 0.3;
+    top:10%;
+    position: absolute;
+    width: 50%;
+    height: 500px;
+    border: 2px dotted black;
+    border-radius: 30px;
+    left: 25%;
+}
 /* bmr計算機標題 */
 #bmr_calculate_title {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 40px;
     align-items: center;
 }
 .bmr_calculate_alltitle {
