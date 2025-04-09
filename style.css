@@ -212,6 +212,16 @@ table,th, td {
     color: white;
 
 }
+/* 回家icon */
+#home_icon  {
+    height: 90px;
+    position: absolute;
+    top: -25px;
+    font-size: 80px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
 /* search Block */
 #menu_list_searchBlock{
     background-color: rgb(240, 217, 217);

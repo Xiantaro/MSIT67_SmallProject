@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMR計算器</title>
-    <link rel="stylesheet" href="./style_brm.css">
-</head>
+     <link rel="stylesheet" href="./style_brm.css">
+  </head>
 <body>
     <!------------------------------------------------------->
     <!-- BMR計算器 -->
      <!-- 背景 -->
     <div id="background_body"></div>
-    <div></div>
     <!-- 主要計算顯示區塊 -->
     <div Id="Two_block_calculate_result">
+      <!-- Home Icon -->
+      <a id="home_icon" href="./indexMain.html">&#8962;</a>
       <!-- 左邊背景 -->
       <div id="bmrCalculate_div"></div>
       <!-- 左邊內容區塊 -->
@@ -27,15 +28,15 @@
             <input type="radio" name="bmr_gender" id="bmrGender_male" value="male"><p id="man">男姓</p>
             <input type="radio" name="bmr_gender" id="bmrGender_female" value="female" checked><p>女性</p>
           </div>
-          <div class="bmr_calculate_alltitle">
+          <div class="bmr_calculate_alltitle" id="bmr_calculate_age">
               <p>年齡:</p>
               <input type="number" placeholder="請輸入年齡" id="bmr_age" class="bmr_input" min="1" max="120" >
           </div>
-          <div class="bmr_calculate_alltitle">
+          <div class="bmr_calculate_alltitle" id="bmr_calculate_height">
               <p>身高:</p>
               <input type="number" placeholder="請輸入身高" id="bmr_height" class="bmr_input" min="100" max="272">
           </div>
-          <div class="bmr_calculate_alltitle">
+          <div class="bmr_calculate_alltitle" id="bmr_calculate_weight">
               <p>體重:</p>
               <input type="number" placeholder="請輸入體重" id="bmr_weight" class="bmr_input" min="20" max="635">
           </div>

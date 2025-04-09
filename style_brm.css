@@ -13,13 +13,22 @@
     width: 100vw;
     height: 100vh;
 }
-
+/* 回家icon */
+#home_icon  {
+    height: 90px;
+    position: absolute;
+    top: -25px;
+    font-size: 80px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
 /* BMR計算器的 */
 #bmr_calculate_block {
     top:10%;
     position: absolute;
     width: 50%;
-    height: 500px;
+    height: 550px;
     border: 2px dotted black;
     border-radius: 30px;
     display: flex;
@@ -32,7 +41,7 @@
     top:10%;
     position: absolute;
     width: 50%;
-    height: 500px;
+    height: 550px;
     border: 2px dotted black;
     border-radius: 30px;
     left: 25%;
@@ -45,26 +54,32 @@
     align-items: center;
 }
 .bmr_calculate_alltitle {
-    display:inline-flex;
-    margin: 0px 90px 0px 26%;
+    display:inline-block;
+    margin: 0px auto;
     font-size: 20px;
 }
 /* 性別 */
 
 #bmrGender_male, #bmrGender_female {
-    margin: auto 20px;
+    margin: auto 10px;
 }
+/* 欄位水平 */
+#bmr_calculate_genter, #bmr_calculate_age, #bmr_calculate_height, #bmr_calculate_weight {
+    display:flex;
+    flex-direction: row;
+}
+
 
 /* 年齡、身高、體重 */
 #bmr_age, #bmr_height, #bmr_weight {
-    width: 60%;
+    width: 300px;
     height: 40px;
     margin: auto 20px;
 }
 /* 計算清除按鈕 */
 
 #bmr_calculate, #bmr_clean, #bmr_reset {
-    /* width: 200px; */
+    width: 200px;
     font-size: 30px;
     cursor: pointer;
     border-radius: 20px;
