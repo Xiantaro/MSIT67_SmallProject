@@ -12,8 +12,6 @@
 #Mid_Content {
     width: 100%;
     position: relative;
-    background-color: rgb(180, 225, 227);
-
 }
 
 /* 內容區塊2 */
@@ -30,7 +28,7 @@
     display:inline-block;
     justify-items: center;
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(32, 46, 46);
     cursor: pointer;
     color: red;
     width:10%;
@@ -40,34 +38,41 @@
 }
 /* 中間文字介紹區塊 */
 #Mid_introduce {
-
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 350px;
     top: 250px;
-    background-color: rgb(250, 247, 156);
+    background-color: rgb(209, 132, 132);
+    display: flex;
+    flex-direction: column;
+    
 }
 /* 文字介紹區塊主要內容 */
-#Mid_introduce_text {
-    position:absolute;
-    top:0px;
-    left:10%;
-    width: 80%;
-    height: 300px;
-    background-color: white;
-}
 #Mid_introduce_text_Name {
     font-size: 90px;
-    padding-left: 20px;
+    margin: auto 20%;
     text-align: center;
 }
 #Mid_introduce_text_word {
+    text-align: center;
+    margin: auto 20%;
     height: 41.9%;
     font-size: 25px;
-    padding: 20px;
+    padding: 3px 60px;
 }
 #Mid_introduce_text_Name ,#Mid_introduce_text_word {
-    background-color: rgb(221, 198, 175);
+    background-color:rgb(240, 188, 188);
+
+}
+/* 選項圖片 */
+#Mid_Content_BMI{
+    background-image: url(./image/1.png);
+}
+#Mid_Content_BMR{
+    background-image: url(./image/2.png);
+}
+#Mid_Content_HEAT{
+    background-image: url(./image/3.png);
 }
 
 /* 社交媒體Icon */
@@ -77,11 +82,21 @@
     height: 79px;
     background-color: rgb(253, 220, 136);
     bottom: 21.6px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
+.Under_SocialMedia_ALL {
+    width: 25px;
+    height: 25px;
+    margin: auto 20px;
+}
+
 /* 頁尾 */
 #Footer_last {
     position:absolute;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: rgb(235, 175, 96);
+    text-align: center;
 }
