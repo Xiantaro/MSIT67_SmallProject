@@ -11,7 +11,7 @@
     opacity: 0.8;
     margin:0;
     width: 100vw;
-    height: 1000px;
+    height: 100%;
 }
 
 
@@ -19,13 +19,13 @@
 #daliyheat_block {
     top:10%;
     position: absolute;
-    width: 50%;
-    height: 500px;
+    width: 70%;
+    height: 600px;
     border: 2px dotted black;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    left: 25%;
+    left: 15%;
 }
 /* bmr計算機標題 */
 #heat_calculate_title {
@@ -34,28 +34,39 @@
     font-size: 30px;
     align-items: center;
 }
+
 .heat_calculate_Alltitle {
-    display:inline-flex;
-    margin: 0px 90px 0px 26%;
+    display:inline-block;
+    margin: 0px auto;
     font-size: 20px;
 }
+
+
 /* 性別 */
 
 #dailyheat_genderMale   , #dailyheat_genderFemale,
 #dailyheat_lightwork, #dailyheat_midwork, #dailyheat_heavywork {
-    margin: auto 20px;
+    margin: auto 10px;
+}
+
+/* 欄位水平 */
+#gender_who,#age_who,#workLevel, #height_who, #weight_who {
+    display:flex;
+    
+    flex-direction: row;
 }
 
 /* 年齡、身高、體重 */
 #dailyheat_age, #dailyheat_height, #dailyheat_weight {
-    width: 60%;
+    width: 300px;
     height: 40px;
     margin: auto 20px;
 }
+
 /* 計算清除按鈕 */
 
-#dailyheat_calculate, #dailyheat_clean, #dailyheat_clean {
-    /* width: 200px; */
+#dailyheat_calculate, #dailyheat_clean, #dailyheat_reset {
+    width: 200px;
     font-size: 30px;
     cursor: pointer;
     border-radius: 20px;
@@ -63,26 +74,20 @@
     margin:auto;
     padding: auto 10px;
 }
-
-#dailyheat_calculate {
-    margin-right: 60%px;
+#dailyheat_calculate, #dailyheat_clean {
+    margin: 10px auto;
 }
-
 /* 計算結果 */
-#heat_calculate_resultBLock {
-    margin-top: 7px;
-    margin: 5px auto;
+#heat_calculate_resulBLock {
+    margin: 30px auto;
     display: flex;
-    align-items: center;
-    
-}
-#dailyheat_clean {
-    font-size: 40px;
-    display:none;
 }
 #dailyheat_result {
     font-size: 30px;
-    width: 250px;
+    width: 500px;
+    margin: auto 5px;
+}
+#dailyheat_result, #dailyheat_reset {
     display:none;
 }
 
@@ -91,11 +96,11 @@
     background-color: rgb(152, 243, 205);
     color:white;
 } 
-#dailyheat_result:hover {
+#dailyheat_clean:hover {
     background-color: rgb(235, 132, 132);
     color:white;
 }
-#dailyheat_clean:hover {
+#dailyheat_reset:hover {
     background-color: rebeccapurple;
     color:white;
 }

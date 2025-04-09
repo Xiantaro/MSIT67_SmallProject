@@ -9,9 +9,8 @@ const dailyheat_genderFemale = document.getElementById(
 const dailyheat_age = document.getElementById("dailyheat_age"); //實體化 年齡
 const dailyheat_height = document.getElementById("dailyheat_height"); //實體化 身高
 const dailyheat_weight = document.getElementById("dailyheat_weight"); //實體化 重量
-const dailyheat_calculate_button = document.getElementById(
-  "dailyheat_calculate"
-); //實體化 計算按鈕
+ //實體化 計算按鈕
+ const dailyheat_calculate_button = document.getElementById( "dailyheat_calculate");// 實體化 計算按鈕
 const dailyheat_clean_button = document.getElementById("dailyheat_clean"); //實體化 清除按鈕
 const dailyheat_result_button = document.getElementById("dailyheat_result"); //實體化 結果顯示
 const dailyheat_reset_button = document.getElementById("dailyheat_reset"); //實體化 重新計算按鈕
@@ -86,6 +85,8 @@ function dailyheatCalculate() {
       result_dailyhet = 35 * weight;
     }
   }
+  dailyheat_result_button.style.display = "block"
+  dailyheat_reset_button.style.display = "block"
   dailyheat_result_button.textContent = `結果: 您一天需要${Math.round(
     result_dailyhet
   )}大卡`;
@@ -101,4 +102,6 @@ function dailyheatClean() {
 function dailyheatReset() {
   dailyheatClean();
   dailyheat_result_button.textContent = "結果: ";
+  dailyheat_reset_button.style.display = "none"
+  dailyheat_result_button.style.display = "none"
 }

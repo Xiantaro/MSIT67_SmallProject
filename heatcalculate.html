@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>熱量計算器</title>
-    <link rel="style  sheet" href="./heat.css">
+    <link rel="stylesheet" href="./heat.css">
   </head>
   <body>
     <div id="background_body"></div>
@@ -21,7 +21,8 @@
               <ins><p>熱量記計算器</p></ins>
             </dib >
             <!-- 工作重量 -->
-            <div clas="heat_calculate_Alltitle"> 
+            <div class="heat_calculate_Alltitle" id="workLevel"> 
+              <p>工作份量:</p>
               <p
               ><input
                 type="radio"
@@ -31,7 +32,7 @@
               />
               輕度工作</p
             >
-            <p
+              <p
               ><input
                 type="radio"
                 id="dailyheat_midwork"
@@ -40,7 +41,7 @@
               />
               中度工作</p
             >
-            <p
+              <p
               ><input
                 type="radio"
                 id="dailyheat_heavywork"
@@ -51,8 +52,8 @@
             >
             </div>
            <!-- 生理性別 -->
-            <div clas="heat_calculate_Alltitle">
-              <p>生理性別</p>
+            <div class="heat_calculate_Alltitle" id="gender_who">
+              <p>生理性別:</p>
               <p><input
                   type="radio"
                   id="dailyheat_genderMale"
@@ -67,51 +68,49 @@
               >
             </div>
             <!-- 年齡 -->
-            <div clas="heat_calculate_Alltitle">
+            <div class="heat_calculate_Alltitle" id="age_who">
               <p>年齡</p>
               <input
                 type="number"
                 id="dailyheat_age"
                 placeholder="請輸入年齡(age)"
-                value="age"
+                
                 required
                 min="10"
                 max="120"
               />
             </div>
             <!-- 身高 -->
-            <div clas="heat_calculate_Alltitle">
+            <div class="heat_calculate_Alltitle" id="height_who">
               <p>身高</p>
               <input
                 type="number"
                 id="dailyheat_height"
                 placeholder="請輸入身高(cm)"
-                value="height"
                 required
                 min="100"
                 max="250"
               />
             </div>
             <!-- 體重 -->
-            <div clas="heat_calculate_Alltitle">
+            <div class="heat_calculate_Alltitle" id="weight_who">
               <p>體重</p>
               <input
                 type="number"
                 id="dailyheat_weight"
                 placeholder="請輸入體重(kg)"
-                value="weight"
                 required
                 min="30"
                 max="300"
               />
             </div>
-            <div>
+            <div class="heat_calculate_Alltitle">
               <button type="button" id="dailyheat_calculate">計算</button>
               <button type="button" id="dailyheat_clean">清除</button>
             </div>
-            <div id="heat_calculate_resul tBLock">
-              <a><label id="dailyheat_result">結果: </label></a>
-              <button type="button" id="dailyheat_clean">重新計算</button>
+            <div id="heat_calculate_resulBLock">
+              <a><label id="dailyheat_result" style="color: red;">結果:   </label></a>
+              <button type="button" id="dailyheat_reset">重新計算</button>
             </div>
         </div>
      </div> 
