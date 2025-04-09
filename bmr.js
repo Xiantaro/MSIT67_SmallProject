@@ -48,7 +48,12 @@ function bmrCalculate() {
   } else {
     bmr_result_end = 9.6 * weight + 1.8 * height - 4.7 * age + 655; //女性Bmr公式
   }
+//   let bmr_result_text = document.getElementById("bmr_result")
+  let bmr_result_style = window.getComputedStyle(bmr_result)
+  if (  bmr_result_style.display === "none")
+    bmr_result.style.display = "block"
   bmr_result.textContent = `結果: ${bmr_result_end.toFixed(2)}`;
+  bmr_reset_button.style.display = "block"
 }
 //bmr清除
 function bmrClean() {
@@ -56,11 +61,17 @@ function bmrClean() {
   bmr_height.value = "";
   bmr_weight.value = "";
 }
+
 //bmr重新計算
 function bmrReset() {
-  bmrClean();
-  bmr_result.textContent = "結果 ";
+    bmrClean();
+    bmr_result.textContent = "結果 ";
+    bmr_reset_button.style.display = "none";
+    bmr_result.style.display ="none";
 }
+// ------------------------------------------
+// ------------------------------------------
+// ------------------------------------------
 // TDEE的計算
 function tdeeCalculate(bmr) {
   //無活動: TDEE = 1.2 * BMR

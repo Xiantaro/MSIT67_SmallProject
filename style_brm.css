@@ -1,6 +1,4 @@
-* {
-    margin: 0px;
-}
+
 
 /* 背景 */
 #background_body {
@@ -18,18 +16,87 @@
 li {
     list-style: none;
 }
-/* BMR計算器的大區塊 */
+
+/* BMR計算器的 */
 #bmr_calculate_block {
-    position: relative;
-    width: 80%;
-    height: 300px;
-    background-color: aqua;
+    top:10%;
+    position: absolute;
+    width: 50%;
+    height: 500px;
     border: 2px dotted black;
     border-radius: 30px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    left: 25%;
 }
 /* bmr計算機標題 */
 #bmr_calculate_title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+.bmr_calculate_alltitle {
+    display:inline-flex;
+    margin: 0px 90px 0px 26%;
     font-size: 20px;
-    margin: 20px;
+}
+/* 性別 */
+
+#bmrGender_male, #bmrGender_female {
+    margin: auto 20px;
+}
+
+/* 年齡、身高、體重 */
+#bmr_age, #bmr_height, #bmr_weight {
+    width: 60%;
+    height: 40px;
+    margin: auto 20px;
+}
+/* 計算清除按鈕 */
+
+#bmr_calculate, #bmr_clean, #bmr_reset {
+    /* width: 200px; */
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    border:0;
+    margin:auto;
+    padding: auto 10px;
+}
+
+#bmr_calculate {
+    margin-right: 60%px;
+}
+
+/* 計算結果 */
+#bmr_calculate_resultBlock {
+    margin-top: 7px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    
+}
+#bmr_reset {
+    font-size: 40px;
+    display:none;
+}
+#bmr_result {
+    font-size: 30px;
+    width: 250px;
+    display:none;
+}
+
+/* 按鈕美化 */
+#bmr_calculate:hover{
+    background-color: rgb(152, 243, 205);
+    color:white;
+} 
+#bmr_clean:hover {
+    background-color: rgb(235, 132, 132);
+    color:white;
+}
+#bmr_reset:hover {
+    background-color: rebeccapurple;
+    color:white;
 }
