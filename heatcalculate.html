@@ -4,109 +4,117 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>熱量計算器</title>
-    <link rel="stylesheet" href="./heat.css">
+    <link rel="style  sheet" href="./heat.css">
   </head>
   <body>
+    <div id="background_body"></div>
+
     <!------------------------------------------------------->
-    <!-- 熱量計算器 -->
-    <div id="daliyheat_block">
-      <ul>
-        <label>熱量記計算器</label>
-        <li>
-          <label
-            ><input
-              type="radio"
-              id="dailyheat_lightwork"
-              name="job"
-              value="light"
-            />
-            輕度工作</label
-          >
-          <label
-            ><input
-              type="radio"
-              id="dailyheat_midwork"
-              name="job"
-              value="mid"
-            />
-            中度工作</label
-          >
-          <label
-            ><input
-              type="radio"
-              id="dailyheat_heavywork"
-              name="job"
-              value="heavy"
-            />
-            重度工作</label
-          >
-        </li>
-        <li>
-          <label>生理性別</label>
-          <label
-            ><input
-              type="radio"
-              id="dailyheat_genderMale"
-              name="gender"
-              value="male"
-            />
-            男(male)</label
-          >
-          <label
-            ><input
-              type="radio"
-              id="dailyheat_genderFemale"
-              name="gender"
-              value="female"
-            />
-            女(female)</label
-          >
-        </li>
-        <li>
-          <label>年齡</label>
-          <input
-            type="number"
-            id="dailyheat_age"
-            placeholder="請輸入年齡(age)"
-            value="age"
-            required
-            min="10"
-            max="120"
-          />
-        </li>
-        <li>
-          <label>身高</label>
-          <input
-            type="number"
-            id="dailyheat_height"
-            placeholder="請輸入身高(cm)"
-            value="height"
-            required
-            min="100"
-            max="250"
-          />
-        </li>
-        <li>
-          <label>體重</label>
-          <input
-            type="number"
-            id="dailyheat_weight"
-            placeholder="請輸入體重(kg)"
-            value="weight"
-            required
-            min="30"
-            max="300"
-          />
-        </li>
-        <div>
-          <button type="button" id="dailyheat_calculate">計算</button>
-          <button type="button" id="dailyheat_clean">清除</button>
+        <!-- 主要計算顯示區塊 -->
+    <div Id="Two_block_calculate_result">
+       <!-- 左邊背景 --> 
+      <div id="bmrCalculate_div"></div>
+       <!-- 熱量計算器 -->
+      <div>
+        <div id="daliyheat_block">
+            <dib id="heat_calculate_title">
+              <ins><p>熱量記計算器</p></ins>
+            </dib >
+            <!-- 工作重量 -->
+            <div clas="heat_calculate_Alltitle"> 
+              <p
+              ><input
+                type="radio"
+                id="dailyheat_lightwork"
+                name="job"
+                value="light"
+              />
+              輕度工作</p
+            >
+            <p
+              ><input
+                type="radio"
+                id="dailyheat_midwork"
+                name="job"
+                value="mid"
+              />
+              中度工作</p
+            >
+            <p
+              ><input
+                type="radio"
+                id="dailyheat_heavywork"
+                name="job"
+                value="heavy"
+              />
+              重度工作</p
+            >
+            </div>
+           <!-- 生理性別 -->
+            <div clas="heat_calculate_Alltitle">
+              <p>生理性別</p>
+              <p><input
+                  type="radio"
+                  id="dailyheat_genderMale"
+                  name="gender"
+                  value="male"/>男(male)</p
+              >
+              <p><input
+                  type="radio"
+                  id="dailyheat_genderFemale"
+                  name="gender"
+                  value="female"/>女(female)</p
+              >
+            </div>
+            <!-- 年齡 -->
+            <div clas="heat_calculate_Alltitle">
+              <p>年齡</p>
+              <input
+                type="number"
+                id="dailyheat_age"
+                placeholder="請輸入年齡(age)"
+                value="age"
+                required
+                min="10"
+                max="120"
+              />
+            </div>
+            <!-- 身高 -->
+            <div clas="heat_calculate_Alltitle">
+              <p>身高</p>
+              <input
+                type="number"
+                id="dailyheat_height"
+                placeholder="請輸入身高(cm)"
+                value="height"
+                required
+                min="100"
+                max="250"
+              />
+            </div>
+            <!-- 體重 -->
+            <div clas="heat_calculate_Alltitle">
+              <p>體重</p>
+              <input
+                type="number"
+                id="dailyheat_weight"
+                placeholder="請輸入體重(kg)"
+                value="weight"
+                required
+                min="30"
+                max="300"
+              />
+            </div>
+            <div>
+              <button type="button" id="dailyheat_calculate">計算</button>
+              <button type="button" id="dailyheat_clean">清除</button>
+            </div>
+            <div id="heat_calculate_resul tBLock">
+              <a><label id="dailyheat_result">結果: </label></a>
+              <button type="button" id="dailyheat_clean">重新計算</button>
+            </div>
         </div>
-        <div>
-          <li><label id="dailyheat_result">結果: </label></li>
-          <button type="button" id="dailyheat_reset">重新計算</button>
-        </div>
-      </ul>
+     </div> 
     </div>
     <script src="heat.js"></script>
   </body>

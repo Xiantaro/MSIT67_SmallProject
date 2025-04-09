@@ -11,14 +11,12 @@
     opacity: 0.8;
     margin:0;
     width: 100vw;
-    height: 100vh;
-}
-li {
-    list-style: none;
+    height: 1000px;
 }
 
+
 /* BMR計算器的 */
-#bmr_calculate_block {
+#daliyheat_block {
     top:10%;
     position: absolute;
     width: 50%;
@@ -30,32 +28,33 @@ li {
     left: 25%;
 }
 /* bmr計算機標題 */
-#bmr_calculate_title {
+#heat_calculate_title {
     display: flex;
     justify-content: center;
     font-size: 30px;
     align-items: center;
 }
-.bmr_calculate_alltitle {
+.heat_calculate_Alltitle {
     display:inline-flex;
     margin: 0px 90px 0px 26%;
     font-size: 20px;
 }
 /* 性別 */
 
-#bmrGender_male, #bmrGender_female {
+#dailyheat_genderMale   , #dailyheat_genderFemale,
+#dailyheat_lightwork, #dailyheat_midwork, #dailyheat_heavywork {
     margin: auto 20px;
 }
 
 /* 年齡、身高、體重 */
-#bmr_age, #bmr_height, #bmr_weight {
+#dailyheat_age, #dailyheat_height, #dailyheat_weight {
     width: 60%;
     height: 40px;
     margin: auto 20px;
 }
 /* 計算清除按鈕 */
 
-#bmr_calculate, #bmr_clean, #bmr_reset {
+#dailyheat_calculate, #dailyheat_clean, #dailyheat_clean {
     /* width: 200px; */
     font-size: 30px;
     cursor: pointer;
@@ -65,38 +64,38 @@ li {
     padding: auto 10px;
 }
 
-#bmr_calculate {
+#dailyheat_calculate {
     margin-right: 60%px;
 }
 
 /* 計算結果 */
-#bmr_calculate_resultBlock {
+#heat_calculate_resultBLock {
     margin-top: 7px;
     margin: 5px auto;
     display: flex;
     align-items: center;
     
 }
-#bmr_reset {
+#dailyheat_clean {
     font-size: 40px;
     display:none;
 }
-#bmr_result {
+#dailyheat_result {
     font-size: 30px;
     width: 250px;
     display:none;
 }
 
 /* 按鈕美化 */
-#bmr_calculate:hover{
+#dailyheat_calculate:hover{
     background-color: rgb(152, 243, 205);
     color:white;
 } 
-#bmr_clean:hover {
+#dailyheat_result:hover {
     background-color: rgb(235, 132, 132);
     color:white;
 }
-#bmr_reset:hover {
+#dailyheat_clean:hover {
     background-color: rebeccapurple;
     color:white;
 }
