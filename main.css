@@ -1,26 +1,59 @@
 * {
     margin: 0px;
 }
+#background_body {
+    position:absolute;
+    top:0;
+    left:0;
+    background-image: url("/XT5X1474.JPG");
+    background-size: 100vw 100vh;
+    object-fit: none;
+    opacity: 0.8;
+    margin:0;
+    width: 100vw;
+    height: 100%;
+}
 /* 標題區塊 */
 #Top_Main_title {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    margin: 15px auto;
     position: relative;
     text-align: center;
     width: 100%;
+    font-size: 50px;
+    color: white;
+}
+#Top_Main_title_block {
+    background-color: #333399;
+    position: absolute;
+    width: 100%;
+    top:0px;
+    height: 100px;
+    opacity: 0.6;
 }
 /* 內容區塊 */
 #Mid_Content {
+    top:3px;
     width: 100%;
     position: relative;
+}
+#Mid_Content_block {
+    /* display: none; */
+    background-color: #2d2d50;
+    opacity: 0.5;
+    width:80%;
+    margin :auto;
+    height: 260px;
+    font-size: 20px;
 }
 
 /* 內容區塊2 */
 #Mid_Content2 {
-    background-color: rgb(167, 113, 222);
     width:100%;
     height: 600px;
     position:absolute;
     text-align: center;
+    top:0px;
 }
 
 /* 健康計算機選項_BMI BMR Heat */
@@ -28,42 +61,50 @@
     display:inline-block;
     justify-items: center;
     align-items: center;
-    background-color: rgb(32, 46, 46);
+    background-color: rgb(245, 247, 247);
     cursor: pointer;
-    color: red;
+    color: rgb(111, 3, 3);
     width:10%;
     height: 200px;
-    border: 2px solid rgb(184, 161, 161);
-    margin: 30px 20px   ;
+    margin: 30px 20px;
+    border-radius: 10px;
+    font-size: 60px;
 }
 /* 中間文字介紹區塊 */
 #Mid_introduce {
-    position: relative;
+    position:absolute ;
     width: 100%;
-    height: 350px;
-    top: 250px;
-    background-color: rgb(209, 132, 132);
+    height: 320px;
+    top: 260px;
     display: flex;
     flex-direction: column;
-    
 }
+#Mid_introduce_block {
+    left:10%;
+    position:absolute ;
+    background-color: #263769;
+    opacity: 0.6;
+    width: 80%;
+    height: 320px;
+    top: 260px;   
+}
+
 /* 文字介紹區塊主要內容 */
 #Mid_introduce_text_Name {
     font-size: 90px;
     margin: auto 20%;
     text-align: center;
+    color: white;
 }
 #Mid_introduce_text_word {
+    color: white;
     text-align: center;
     margin: auto 20%;
     height: 41.9%;
     font-size: 25px;
     padding: 3px 60px;
 }
-#Mid_introduce_text_Name ,#Mid_introduce_text_word {
-    background-color:rgb(240, 188, 188);
 
-}
 /* 選項圖片 */
 #Mid_Content_BMI{
     background-image: url(./image/1.png);
@@ -76,27 +117,45 @@
 }
 
 /* 社交媒體Icon */
+#Under_SocialMedia_blocl {
+    position:absolute;
+    left:10%;
+    width: 80%;
+    height: 45px;
+    background-color: rgb(15, 18, 20);
+    opacity: 0.4;
+    bottom: 21.6px;
+}
 #Under_SocialMedia {
     position:absolute;
     width: 100%;
-    height: 79px;
-    background-color: rgb(253, 220, 136);
+    height: 45px;
+    /* background-color: rgb(253, 220, 136); */
     bottom: 21.6px;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 .Under_SocialMedia_ALL {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     margin: auto 20px;
 }
 
 /* 頁尾 */
+#Footer_last_block {
+    position:absolute;
+    height: 21.6px;
+    opacity: 0.8;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
 #Footer_last {
+    color: white;
     position:absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgb(235, 175, 96);
+    /* background-color: rgb(235, 175, 96); */
     text-align: center;
 }
