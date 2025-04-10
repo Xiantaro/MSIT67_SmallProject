@@ -28,7 +28,6 @@
     position: absolute;
     width: 100%;
     top:0px;
-   
     height: 100px;
     opacity: 0.4;
 }
@@ -40,11 +39,11 @@
 }
 #Mid_Content_block {
     /* display: none; */
-    background-color: #ffffff;
-    opacity: 0.09;
+    background-color: #10172b;
+    opacity: 0.5;
     width:100%;
     margin :auto;
-    height: 260px;
+    height: 577px;
     font-size: 20px;
 }
 
