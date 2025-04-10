@@ -83,12 +83,12 @@ document.getElementById("memu_list_title_search").addEventListener("click", func
   if (style.display === "none") block.style.display = "block";
   else block.style.display = "none";});
 // 顯示BMI
-document.getElementById("menu_bmi").addEventListener("click", function() {
-  let twoBlock = document.getElementById("Two_block_calculate_result");
-  let style = window.getComputedStyle(twoBlock);
-  if (style.display === "none") twoBlock.style.display = "flex";
-  else twoBlock.style.display = "none"
-})
+// document.getElementById("menu_bmi").addEventListener("click", function() {
+//   let twoBlock = document.getElementById("Two_block_calculate_result");
+//   let style = window.getComputedStyle(twoBlock);
+//   if (style.display === "none") twoBlock.style.display = "flex";
+//   else twoBlock.style.display = "none"
+// })
 
 // ------------------------------------------------------- ------------------------------------------------------- ------------------------------------------------------- ------------------------------------------------------- -------------------------------------------------------
 // -----------------------我是分隔線------------------------------------------------------------ ------------------------------------------------------- ------------------------------------------------------- ------------------------------------------------------- ------------------
