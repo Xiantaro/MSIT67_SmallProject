@@ -89,3 +89,27 @@ function tdeeCalculate(bmr) {
   // 非常高度活動量: TDEE = 1.9 * BMR
   let teDD_awfully_hight = bmrCalculate(bmr) * 1.9;
 }
+
+
+
+// 選單
+// 點選時會出現選單,下拉選單會隱藏。
+document.getElementById("Top_ListBlock").addEventListener("click", function () {
+  document.getElementById("menu_list").style.display = "block";
+  if (document.getElementById("menu_list").style.display === "block") {
+    this.style.display = "none";
+  }
+});
+// 點選選單的X時會關閉視窗,並顯示下拉選單
+document
+  .getElementById("menu_list_cancle")
+  .addEventListener("click", function () {
+    document.getElementById("menu_list").style.display = "none";
+    document.getElementById("Top_ListBlock").style.display = "block";
+  });
+// 搜尋放大鏡區塊顯示
+document.getElementById("memu_list_title_search").addEventListener("click", function() {
+  let block = document.getElementById("menu_list_searchBlock");
+  let style = window.getComputedStyle(block);
+  if (style.display === "none") block.style.display = "block";
+  else block.style.display = "none";});
