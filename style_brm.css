@@ -65,12 +65,15 @@
 /* 性別 */
 
 #bmrGender_male, #bmrGender_female {
-    margin: auto 10px;
+    margin: auto 30px;
 }
 /* 欄位水平 */
 #bmr_calculate_genter, #bmr_calculate_age, #bmr_calculate_height, #bmr_calculate_weight {
     display:flex;
     flex-direction: row;
+}
+#bmr_calculate_genter {
+    margin: 20px auto 30px;
 }
 
 
