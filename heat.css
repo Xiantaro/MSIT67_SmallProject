@@ -69,22 +69,24 @@
 
 /* 性別 */
 
-#dailyheat_genderMale   , #dailyheat_genderFemale {
-    margin: auto 10px;
-}
 /* 工作水平 */
 #dailyheat_Level,#dailyheat_lightwork1, #dailyheat_midwork1, #dailyheat_heavywork1 {
-    margin: 30px auto 0;
+    margin: 30px 5px  0;
     font-size: 25px;
+}
+
+#geder,#gender_female, #gender_male {
+    margin: 0px 10px 0;
 }
 /* 欄位水平 */
 #gender_who,#age_who,#workLevel, #height_who, #weight_who {
     display:flex;
     flex-direction: row;
 }
-#workLevel {
-    
+#gender_who {
+    height: 50px;
 }
+
 
 /* 年齡、身高、體重 */
 #dailyheat_age, #dailyheat_height, #dailyheat_weight {

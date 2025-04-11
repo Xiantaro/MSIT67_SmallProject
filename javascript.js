@@ -32,13 +32,13 @@ function bmiCalculate() {
   bmi = bmi.toFixed(2);
   let resultText = "";
   if (bmi >= 27) {
-    resultText = "肥胖";
+    alert("肥胖");
   } else if (bmi >= 24) {
-    resultText = "體重過重";
+    alert("體重過重");
   } else if (bmi >= 18.5) {
-    resultText = "健康體重!!";
+    alert("健康體重!!");
   } else if (bmi < 18.5) {
-    resultText = "體重過輕..";
+    alert("體重過輕..");
   }
   input_result_bmi.textContent = `${bmi}`;
 }

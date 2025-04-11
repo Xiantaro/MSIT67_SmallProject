@@ -23,50 +23,44 @@
               <div id="my_love">&hearts;</div>
             </dib >
             <!-- 工作重量 -->
-            <div class="heat_calculate_Alltitle" id="workLevel"> 
+            <div class="heat_calculate_Alltitle" id="workLevel">
               <p id="dailyheat_Level">|工作份量:|</p>
-              <p id="dailyheat_lightwork1"
-              ><input
-                type="radio"
-                id="dailyheat_lightwork"
-                name="job"
-                value="light"
-              />
-            輕度工作|</p
-            >
-              <p id="dailyheat_midwork1"
-              ><input
+              <label id="dailyheat_lightwork1"  for="dailyheat_lightwork"> 
+              <input type="radio"  id="dailyheat_lightwork"  name="job" value="light"/>
+                輕度工作|</label>
+              <label id="dailyheat_midwork1"
+              for="dailyheat_midwork"><input
                 type="radio"
                 id="dailyheat_midwork"
                 name="job"
                 value="mid"
               />
-              中度工作|</p
+              中度工作|</label
             >
-              <p id="dailyheat_heavywork1"
+              <label id="dailyheat_heavywork1"
               ><input
                 type="radio"
                 id="dailyheat_heavywork"
                 name="job"
                 value="heavy"
               />
-              重度工作|</p
+              重度工作|</label
             >
             </div>
            <!-- 生理性別 -->
             <div class="heat_calculate_Alltitle" id="gender_who">
-              <p>|生理性別:|</p>
-              <p><input
+              <label id="gender">|生理性別:</label>|
+              <label id="gender_male"><input
                   type="radio"
                   id="dailyheat_genderMale"
                   name="gender"
-                  value="male"/>男(male)|</p
-              >
-              <p><input
+                  value="male"/>男(male)</label
+              >|
+              <label id="gender_female"><input
                   type="radio"
                   id="dailyheat_genderFemale"
                   name="gender"
-                  value="female"/>女(female)|</p
+                  value="female"/>女(female)|</label
               >
             </div>
             <!-- 年齡 -->

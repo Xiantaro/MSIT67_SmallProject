@@ -84,6 +84,7 @@ function dailyheatCalculate() {
     } else if (work === "heavy") {
       result_dailyhet = 35 * weight;
     }
+    
   }
   dailyheat_result_button.style.display = "block"
   dailyheat_reset_button.style.display = "block"
