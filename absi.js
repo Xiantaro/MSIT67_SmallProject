@@ -42,7 +42,7 @@ function bmrCalculate() {
     height <= 0 ||
     waist <= 0
   ) {
-    alert("請輸入正確的年紀身高體重...");
+    alert("請輸入正確的年紀身高體重腰圍...");
     return;
   }
   // ABSI 計算
@@ -61,6 +61,12 @@ function bmrCalculate() {
   bmr_reset_button.style.display = "block"
 }
 
+// Enter觸發計算
+document.addEventListener("keydown", function(e) {
+  if (e.code === "Enter") {
+    bmrCalculate();
+  }
+})
 
 
 

@@ -69,6 +69,11 @@ function bmrReset() {
     bmr_reset_button.style.display = "none";
     bmr_result.style.display ="none";
 }
+document.addEventListener("keydown", function(e) {
+  if (e.code === "Enter") {
+    bmrCalculate();
+  }
+})
 // ------------------------------------------
 // ------------------------------------------
 // ------------------------------------------

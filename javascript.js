@@ -82,6 +82,12 @@ document.getElementById("memu_list_title_search").addEventListener("click", func
   let style = window.getComputedStyle(block);
   if (style.display === "none") block.style.display = "block";
   else block.style.display = "none";});
+// 按下enter計算
+document.addEventListener("keydown", function(e) {
+  if (e.code === "Enter") {
+    bmiCalculate();
+  }
+})
 // 顯示BMI
 // document.getElementById("menu_bmi").addEventListener("click", function() {
 //   let twoBlock = document.getElementById("Two_block_calculate_result");

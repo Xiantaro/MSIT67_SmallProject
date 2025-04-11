@@ -44,6 +44,7 @@ function gender_selecter() {
   }
   return selectedGender;
 }
+
 /* 每日熱量計算器 */
 function dailyheatCalculate() {
   let work = job_selecter();
@@ -115,6 +116,12 @@ document.getElementById("my_love").addEventListener("click", function () {
     this.style.color = "red";
   }
 });
+// 計算enter
+document.addEventListener("keydown", function(e) {
+  if (e.code === "Enter") {
+    dailyheatCalculate();
+  }
+})
 
 // 選單
 // 點選時會出現選單,下拉選單會隱藏。
