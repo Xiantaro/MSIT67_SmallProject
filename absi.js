@@ -50,6 +50,9 @@ function bmrCalculate() {
   bmi = bmi.toFixed(2);
   let absi = waist / ((Math.pow(bmi, (2/3))) * Math.pow(height*100, 0.5));
   absi = absi.toFixed(5);
+  if (absi >0.085) alert("請注意!!你是高風險族群!!");
+  else if (absi < 0.08) alert("較低風險!");
+  else alert("中等風險")
 //   let bmr_result_text = document.getElementById("bmr_result")
   let bmr_result_style = window.getComputedStyle(bmr_result)
   if (  bmr_result_style.display === "none")

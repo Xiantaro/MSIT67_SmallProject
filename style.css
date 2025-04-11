@@ -291,7 +291,7 @@ a:link{
     margin:20px 20px;
 }
 /* 內容區塊顯示 */
-#menu_bmi, #menu_bmr,#menu_heat {
+#menu_bmi, #menu_bmr,#menu_heat,#menu_absi {
     
     background-color: rgb(207, 171, 171);
     color:rgb(3, 3, 3);
@@ -307,6 +307,9 @@ a:link{
 }
 #menu_heat {
     background-image: url(./image/3.png);
+}
+#menu_absi {
+    background-image: url(./image/4.png);
 }
 /* ------------------------------------------------------------ */
 /* 我的最愛 */
