@@ -118,16 +118,6 @@
     width: 250px;
     display:none;
 }
-/* 我的最愛 */
-#my_love {
-    color: rgb(230, 12, 12);
-    font-size: 150px;
-    position: absolute;
-    left: -1%;
-    top: -11%;
-    rotate:-20deg;
-    cursor:pointer;
-}
 
 /* 按鈕美化 */
 #bmr_calculate:hover{
@@ -293,8 +283,8 @@ a:link{
     color: rgb(230, 12, 12);
     font-size: 150px;
     position: absolute;
-    left: -1%;
-    top: -11%;
+    left: -2%;
+    top: -10%;
     rotate:-20deg;
     cursor:pointer;
 }
