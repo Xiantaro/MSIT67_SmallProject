@@ -89,7 +89,14 @@ function tdeeCalculate(bmr) {
   // 非常高度活動量: TDEE = 1.9 * BMR
   let teDD_awfully_hight = bmrCalculate(bmr) * 1.9;
 }
-
+// 點擊愛心收藏
+document.getElementById("my_love").addEventListener("click", function () {
+  if (this.style.color === "red") {
+    this.style.color = "black";
+  } else {
+    this.style.color = "red";
+  }
+});
 
 
 // 選單

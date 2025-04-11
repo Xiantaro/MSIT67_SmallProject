@@ -106,7 +106,14 @@ function dailyheatReset() {
   dailyheat_result_button.style.display = "none"
 }
 
-
+// 點擊愛心收藏
+document.getElementById("my_love").addEventListener("click", function () {
+  if (this.style.color === "red") {
+    this.style.color = "black";
+  } else {
+    this.style.color = "red";
+  }
+});
 
 // 選單
 // 點選時會出現選單,下拉選單會隱藏。
