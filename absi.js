@@ -45,6 +45,14 @@ function bmrCalculate() {
     alert("請輸入正確的年紀身高體重腰圍...");
     return;
   }
+  if (height >= 272)
+    return window.alert(
+      "身高超越Robert Pershing Wadlow!,你成為歷史上最高的人。"
+    );
+  if (weight >= 635)
+    return window.alert(
+      "體重超越Jon Brower Minnoch!,你成為歷史上最重(胖)的人。"
+    );
   // ABSI 計算
   let bmi = weight / Math.pow(height / 100, 2);
   bmi = bmi.toFixed(2);

@@ -43,6 +43,14 @@ function bmrCalculate() {
     alert("請輸入正確的年紀身高體重...");
     return;
   }
+  if (height >= 272)
+    return window.alert(
+      "身高超越Robert Pershing Wadlow!,你成為歷史上最高的人。"
+    );
+  if (weight >= 635)
+    return window.alert(
+      "體重超越Jon Brower Minnoch!,你成為歷史上最重(胖)的人。"
+    );
   if (gender === "male") {
     bmr_result_end = 13.7 * weight + 5 * height - 6.8 * age + 66; //男性Bmr公式
   } else {

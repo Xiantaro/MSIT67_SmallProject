@@ -58,6 +58,14 @@ function dailyheatCalculate() {
     alert("請輸入有效的身高體重數值....");
     return;
   }
+  if (height >= 272)
+    return window.alert(
+      "身高超越Robert Pershing Wadlow!,你成為歷史上最高的人。"
+    );
+  if (weight >= 635)
+    return window.alert(
+      "體重超越Jon Brower Minnoch!,你成為歷史上最重(胖)的人。"
+    );
   if (bmi < 18.5) {
     //BMI過輕
     if (work === "light") {
