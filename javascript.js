@@ -77,17 +77,20 @@ document
     document.getElementById("Top_ListBlock").style.display = "block";
   });
 // 搜尋放大鏡區塊顯示
-document.getElementById("memu_list_title_search").addEventListener("click", function() {
-  let block = document.getElementById("menu_list_searchBlock");
-  let style = window.getComputedStyle(block);
-  if (style.display === "none") block.style.display = "block";
-  else block.style.display = "none";});
+document
+  .getElementById("memu_list_title_search")
+  .addEventListener("click", function () {
+    let block = document.getElementById("menu_list_searchBlock");
+    let style = window.getComputedStyle(block);
+    if (style.display === "none") block.style.display = "block";
+    else block.style.display = "none";
+  });
 // 按下enter計算
-document.addEventListener("keydown", function(e) {
+document.addEventListener("keydown", function (e) {
   if (e.code === "Enter") {
     bmiCalculate();
   }
-})
+});
 // 顯示BMI
 // document.getElementById("menu_bmi").addEventListener("click", function() {
 //   let twoBlock = document.getElementById("Two_block_calculate_result");
