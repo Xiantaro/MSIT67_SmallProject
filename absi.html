@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABSI</title>
+     <link rel="stylesheet" href="./absi.css">
+  </head>
+<body>
+    <!------------------------------------------------------->
+    <!-- BMR計算器 -->
+     <!-- 背景 -->
+    <div id="background_body"></div>
+    <!-- 主要計算顯示區塊 -->
+    <div Id="Two_block_calculate_result">
+      <!-- Home Icon -->
+      <a id="home_icon" href="./indexMain.html">&#8962;</a>
+      <!-- 左邊背景 -->
+      <div id="bmrCalculate_div"></div>
+      <!-- 左邊內容區塊 -->
+      <div>
+        <div id="bmr_calculate_block">
+          <div id="bmr_calculate_title">
+            <ins><p id="bmr_calculate_title2">ABSI</p></ins><br>
+            <div id="my_love">&hearts;</div>
+          </div>
+          <div class="bmr_calculate_alltitle" id="bmr_calculate_genter">
+            <label>生理性別:</label>
+            <input type="radio" name="bmr_gender" id="bmrGender_male" value="male"><label id="man" for="bmrGender_male">男姓</label>
+            <input type="radio" name="bmr_gender" id="bmrGender_female" value="female" checked><label for="bmrGender_female">女性</label>
+          </div>
+          <div class="bmr_calculate_alltitle" id="bmr_calculate_age">
+              <p>年齡:</p>
+              <input type="number" placeholder="請輸入年齡" id="bmr_age" class="bmr_input" min="1" max="120" >
+          </div>
+          <div class="bmr_calculate_alltitle" id="bmr_calculate_height">
+              <p>身高:</p>
+              <input type="number" placeholder="請輸入身高" id="bmr_height" class="bmr_input" min="100" max="272">
+          </div>
+          <div class="bmr_calculate_alltitle" id="bmr_calculate_weight">
+              <p>體重:</p>
+              <input type="number" placeholder="請輸入體重" id="bmr_weight" class="bmr_input" min="20" max="635">
+          </div>
+          <div class="bmr_calculate_alltitle" id="bmr_calculate_waist">
+              <p>腰圍:</p>
+              <input type="number" placeholder="請輸入腰圍" id="bmr_waist" class="bmr_input">
+          </div>
+          <div class="bmr_calculate_alltitle">
+            <button type="button" id="bmr_calculate" >計算</button>
+            <button type="button" id="bmr_clean">清除</button>
+          </div>
+          <div class="" id="bmr_calculate_resultBlock">
+            <p id="bmr_result" style="color:rgb(255, 255, 255)">結果:   </p>
+            <button type="button" id="bmr_reset">重新計算</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div>
+      <div id="Top_ListBlock">&#9776;</div>
+      <a id="home_icon" href="./indexMain.html">&#8962;</a>
+    </div>
+    <div id="menu_list">
+      <div id="menu_list_TitleDiv">
+        <label class="menu_list_title">全部</label>
+        <label class="menu_list_title">我的最愛</label>
+        <label class="menu_list_title" id="memu_list_title_search">&#128269;</label>
+        <a id="menu_list_cancle">&#10539;</a>
+      </div>
+      <div  id="menu_list_searchBlock" >
+        <div id="menu_list_searchBlock_3">
+          <label class ="search_all" id="searchBlock_reach">搜尋:</label><input type="text" id="searchBlock_text" class ="search_all">
+          <label   id="searchBlock_type" class ="search_all">類型:</label>
+          <select id="type_list"name="type"class ="search_all">
+            <option>生活</option>
+            <option>工業</option>
+            <option>娛樂</option>
+            <option>算命</option>
+            <option>稅率</option>
+          </select>
+          <label class ="search_all" id="searchBlock_list">排列:</label>
+          <div id="search_list_icon" class ="search_all"><a>&#9783;</a></div>
+        </div>
+      </div>
+      <div  id="menu_list_content">
+        <a href="./bmicalculate.html">
+          <div class="menu_list_content_box" id="menu_bmi">BMI</div>
+        </a>
+        <a href="./bmrcalulate.html">
+          <div class="menu_list_content_box" id="menu_bmr">BMR</div>
+        </a>
+        <a href="./heatcalculate.html">
+          <div class="menu_list_content_box" id="menu_heat">HEAT</div>
+        </a>
+        <a href="./absi.html">
+          <div class="menu_list_content_box" id="menu_absi">ABSI</div>
+        </a>
+        
+      </div>
+    </div>
+      <!-- ------------------------------------------------------- -->
+      <!-- 右邊區塊 -->
+
+    <script src="absi.js"></script>
+</body>
+</html>

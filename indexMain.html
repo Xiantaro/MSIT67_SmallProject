@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    
+    <div id="background_body"></div>
+    
     <header>
+        <div id="Top_Main_title_block"></div>
         <div id="Top_Main_title">
-            <h1>健康計算器</h1>
+            <p>健康計算器</p>
         </div>
     </header>
     <div id="Mid_Content">
+        <div id="Mid_Content_block"></div>
         <div id="Mid_Content2">
-            <a href="./index.html">
+            <a href="./bmicalculate.html">
                 <div  id="Mid_Content_BMI" class="Mid_Content_block" data-name="BMI" data-word ="是一種用來衡量一個人身體脂肪含量的指標，它透過身高和體重的比例來評估是否處於健康範圍。">
                     <div>BMI</div>
                 </div>
@@ -29,8 +34,13 @@
                     <div>HEAT</div>
                 </div>
             </a>
+            <a href="./absi.html">
+                <div id="Mid_Content_ABSI" class="Mid_Content_block" data-name="體型指數" data-word="是一種用來評估個人腹部脂肪分布的指標，旨在補充傳統 BMI（體質指數）的不足。BMI 主要考慮身高與體重，但無法反映脂肪的具體分布，特別是腹部脂肪的堆積情況，而這與心血管疾病、糖尿病等健康問題密切相關">
+                    <div>ABSI</div>
+                </div>
+            </a>
             
-            <div id="Mid_Content_1" class="Mid_Content_block" data-name="??" data-word="開發中">
+            <!-- <div id="Mid_Content_1" class="Mid_Content_block" data-name="??" data-word="開發中">
                 <div>?</div>
             </div>
             <div id="Mid_Content_2" class="Mid_Content_block" data-name="??" data-word="開發中">
@@ -38,20 +48,26 @@
             </div>
             <div id="Mid_Content_3" class="Mid_Content_block" data-name="??" data-word="開發中">
                 <div>?</div>
-            </div>
-            </div>
+            </div> -->
         </div>
+        <div id="Mid_introduce_block"></div>
         <div id="Mid_introduce">
-            <div id="Mid_introduce_text">
-                <div id="Mid_introduce_text_Name"><label>請選擇</label></div>
-                <div id="Mid_introduce_text_word"><label></label></div>
-            </div>
+            <div id="Mid_introduce_text_Name"><label>請選擇</label></div>
+            <div id="Mid_introduce_text_word"><label>你的健康器</label></div>
         </div>
     </div>
-    <div id="Under_SocialMedia"></div>
+    <div id="Under_SocialMedia_blocl"></div>
+    <div id="Under_SocialMedia">
+        <a href=""><img src="./social_icon/social.png" class="Under_SocialMedia_ALL" id="Under_SocialMedia_FB"/></a>
+        <a href="https://www.facebook.com/?locale=zh_TW"><img src="./social_icon/facebook.png" class="Under_SocialMedia_ALL" id="Under_SocialMedia_FB"/></a>
+        <a href=""><img src="./social_icon/threads.png" class="Under_SocialMedia_ALL" id="Under_SocialMedia_FB"/></a>
+        <a href=""><img src="./social_icon/twitter.png" class="Under_SocialMedia_ALL" id="Under_SocialMedia_FB"/></a>
+        <a href=""><img src="./social_icon/wechat.png" class="Under_SocialMedia_ALL" id="Under_SocialMedia_FB"/></a>
+    </div>
     <footer>
+        <div id="Footer_last_block"></div>
         <div id="Footer_last">
-            <div>頁尾</div>
+            <div>2025/04/14 微軟C#工程師養成班_06_葉忠憲_健康計算器</div>
         </div>
     </footer>
     <script src="main.js"></script>

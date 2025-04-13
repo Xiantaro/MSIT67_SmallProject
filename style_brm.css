@@ -1,13 +1,11 @@
-* {
-    margin: 0px;
-}
+
 
 /* 背景 */
 #background_body {
     position:absolute;
     top:0;
     left:0;
-    background-image: url("/XT5X1474.JPG");
+    background-image: url("./XT5X1474.JPG");
     background-size: 100vw 100vh;
     object-fit: none;
     opacity: 0.8;
@@ -15,21 +13,278 @@
     width: 100vw;
     height: 100vh;
 }
-li {
-    list-style: none;
+/* 回家icon */
+#home_icon  {
+    height: 90px;
+    position: absolute;
+    top: -25px;
+    font-size: 80px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
-/* BMR計算器的大區塊 */
+/* BMR計算器的 */
 #bmr_calculate_block {
-    position: relative;
-    width: 80%;
-    height: 300px;
-    background-color: aqua;
+    top:4%;
+    position: absolute;
+    width: 50%;
+    height: 680px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    left: 25%;
+    color:white;
+}
+#bmrCalculate_div {
+    background-color: rgb(42, 40, 40);
+    opacity: 0.5;
+    top:4%;
+    position: absolute;
+    width: 50%;
+    height: 680px;
     border: 2px dotted black;
     border-radius: 30px;
-    text-align: center;
+    left: 25%;
 }
 /* bmr計算機標題 */
 #bmr_calculate_title {
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0px auto;
+}
+#bmr_calculate_title2 {
     margin: 20px;
+}
+.bmr_calculate_alltitle {
+    display:inline-block;
+    margin: 10px auto;
+    font-size: 25px;
+}
+/* 性別 */
+
+#bmrGender_male, #bmrGender_female {
+    margin: auto 30px;
+}
+/* 欄位水平 */
+#bmr_calculate_genter, #bmr_calculate_age, #bmr_calculate_height, #bmr_calculate_weight {
+    display:flex;
+    flex-direction: row;
+}
+#bmr_calculate_genter {
+    margin: 20px auto 30px;
+}
+
+
+/* 年齡、身高、體重 */
+#bmr_age, #bmr_height, #bmr_weight {
+    width: 300px;
+    height: 40px;
+    margin: auto 20px;
+}
+/* 計算清除按鈕 */
+
+#bmr_calculate, #bmr_clean, #bmr_reset {
+    width: 200px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    border:0;
+    margin:auto;
+    padding: auto 10px;
+}
+
+#bmr_calculate {
+    margin-right: 60%px;
+}
+
+/* 計算結果 */
+#bmr_calculate_resultBlock {
+    height: 100px;
+    margin-top: 1px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    
+}
+#bmr_reset {
+    font-size: 30px;
+    display:none;
+    margin-left: 50px;
+}
+#bmr_result {
+    font-size: 40px;
+    width: 250px;
+    display:none;
+}
+
+/* 按鈕美化 */
+#bmr_calculate:hover{
+    background-color: rgb(107, 237, 183);
+    color:white;
+} 
+#bmr_clean:hover {
+    background-color: rgb(235, 132, 132);
+    color:white;
+}
+#bmr_reset:hover {
+    background-color: rebeccapurple;
+    color:white;
+}
+
+/* 最上層下拉式選單 */
+#Top_ListBlock {
+    width: 10%;
+    position: absolute;
+    height: 60px;
+    left:45%;
+    top:0;
+    text-align: center;
+    font-size: 40px;
+    color:antiquewhite;
+    transition-duration: 0.5s;
+    border-radius: 0 0 20px 20px;
+}
+#Top_ListBlock:hover {
+    background-color: rgba(168, 161, 142, 0.811);
+    color:black;
+    cursor:pointer
+}
+/* 菜單 選單*/
+#menu_list {
+    display: none;
+    position: absolute;
+    width: 90%;
+    height:95%;
+    top:4%;
+    left:5%;
+    background-color: bisque;
+}
+#menu_list_cancle {
+    position: absolute;
+    font-size: 100px;
+    right: 0%;
+    top:-3%;
+    cursor:pointer;
+}
+/* Icon */
+#memu_list_title_search,#search_list_icon {
+    cursor:pointer;
+}
+#search_list_icon {
+    width: 20px;
+    font-size: 10px;
+    border: 1px solid white;
+    color: white;
+
+}
+/* 回家icon */
+#home_icon  {
+    height: 90px;
+    position: absolute;
+    top: -25px;
+    font-size: 80px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+/* search Block */
+#menu_list_searchBlock{
+    background-color: rgb(240, 217, 217);
+    display: none;
+    height: 80px;
+    font-size: 20px ;
+    padding-left: 40%;
+}
+#searchBlock_text, #type_list {
+    height: 40px;
+    margin-right: 20px 20px;
+}
+/* 搜尋內三個選項div */
+#menu_list_searchBlock_3 {
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border: 20px;
+    font-size: 30px;
+}
+#searchBlock_reach {
+    padding:auto;
+    margin-right: 20px;
+}
+.search_all {
+    margin-right: 20px;
+}
+
+#menu_list_TitleDiv {
+    background-color: rgb(239, 185, 111);
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.menu_list_title {
+    margin: auto 50px;
+    font-size: 30px
+}
+#menu_list_type {
+    background-color: blue;
+    width: 100%;
+    height: 10%;
+}
+#menu_list_content {
+    position: absolute;
+    background-color: rgb(251, 165, 122);
+    left:5%;
+    width: 90%;
+    height:76%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:auto;
+}
+a:link{
+    text-decoration: none;
+}
+.menu_list_content_box{
+    width: 200px;
+    height: 200px;
+    background-color: wheat;
+    margin:20px 20px;
+}
+/* 內容區塊顯示 */
+#menu_bmi, #menu_bmr,#menu_heat,#menu_absi {
+    
+    background-color: rgb(207, 171, 171);
+    color:rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+#menu_bmi {
+    background-image: url(./image/1.png);
+}
+#menu_bmr {
+    background-image: url(./image/2.png);
+}
+#menu_heat {
+    background-image: url(./image/3.png);
+}
+#menu_absi {
+    background-image: url(./image/4.png);
+}
+/* ------------------------------------------------------------ */
+/* 我的最愛 */
+#my_love {
+    color: rgb(230, 12, 12);
+    font-size: 150px;
+    position: absolute;
+    left: -2%;
+    top: -10%;
+    rotate:-20deg;
+    cursor:pointer;
 }

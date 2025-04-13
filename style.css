@@ -2,7 +2,7 @@
     position:absolute;
     top:0;
     left:0;
-    background-image: url("/XT5X1474.JPG");
+    background-image: url("./XT5X1474.JPG");
     background-size: 100vw 100vh;
     object-fit: none;
     opacity: 0.8;
@@ -189,7 +189,8 @@ table,th, td {
     display: none;
     position: absolute;
     width: 90%;
-    height:90%;
+    height:95%;
+    border-radius: 20px;
     top:4%;
     left:5%;
     background-color: bisque;
@@ -212,11 +213,21 @@ table,th, td {
     color: white;
 
 }
+/* 回家icon */
+#home_icon  {
+    height: 90px;
+    position: absolute;
+    top: -25px;
+    font-size: 80px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
 /* search Block */
 #menu_list_searchBlock{
     background-color: rgb(240, 217, 217);
     display: none;
-    height: 110px;
+    height: 80px;
     font-size: 20px ;
     padding-left: 40%;
 }
@@ -243,6 +254,7 @@ table,th, td {
 
 #menu_list_TitleDiv {
     background-color: rgb(239, 185, 111);
+    border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 85px;
     display: flex;
@@ -264,29 +276,45 @@ table,th, td {
     background-color: rgb(251, 165, 122);
     left:5%;
     width: 90%;
-    height:70%;
+    height:76%;
     display: flex;
     flex-wrap: wrap;
     margin-left:auto;
+}
+a:link{
+    text-decoration: none;
 }
 .menu_list_content_box{
     width: 200px;
     height: 200px;
     background-color: wheat;
-    margin:20px auto;
+    margin:20px 20px;
 }
 /* 內容區塊顯示 */
-#menu_bmi, #menu_bmr,#menu_heat {
+#menu_bmi, #menu_bmr,#menu_heat,#menu_absi {
+    
     background-color: rgb(207, 171, 171);
-    color:white;
+    color:rgb(3, 3, 3);
     font-size: 35px;
     text-align: center;
     cursor: pointer;
 }
+#menu_bmi {
+    background-image: url(./image/1.png);
+}
+#menu_bmr {
+    background-image: url(./image/2.png);
+}
+#menu_heat {
+    background-image: url(./image/3.png);
+}
+#menu_absi {
+    background-image: url(./image/4.png);
+}
 /* ------------------------------------------------------------ */
 /* 我的最愛 */
 #my_love {
-    color: rgb(0, 0, 0);
+    color: rgb(230, 12, 12);
     font-size: 150px;
     position: absolute;
     left: -1%;

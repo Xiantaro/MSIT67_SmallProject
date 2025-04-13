@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="background_body"></div>
+    <div>
+        <div id="Top_ListBlock">&#9776;</div>
+        <a id="home_icon" href="./indexMain.html">&#8962;</a>
+    </div>
+
+
+    <!-- 計算器選單 -->
+<!--------------------------------------------------------->
+    <!-- BMI計算器 -->
+     <div id="Two_block_calculate_result">
+        <div id="bmiCalculate_div">
+          <label id="Name_bmicalcuate">BMI計算器</label>
+          <div id="my_love">&hearts;</div>
+          <ul id="ul_input_bmicalculate">
+            <div id="height_weigth">
+              <li class="li_height_block">
+                <label for="bmi_input_height">身高:</label>
+                <input type="number" id ="bmi_input_height" placeholder="請輸入身高(cm)" required min="100", max="272">
+              </li>
+              <li class="li_weight_block">
+                  <label for="bmi_input_weight">體重:</label>
+                  <input type="number" id ="bmi_input_weight" placeholder="請輸入體重(kg)" required min="30", max="635">
+              </li>
+            </div>
+
+            <div class="button_block">
+              <button class="button" id="buttom_calculate_bmi">計算</button>
+              <button class="button" id="buttom_clean_bmi">清除</button>
+            </div>
+            <div class="button_block">             
+              
+              <button class="button" id="bmi_reset">重新計算</button>
+            </div>
+          </ul>
+        </div>
+        <!-- 右邊結果區塊 -->
+        <div id="bmi_result_Block">
+            <table id="image_bmi_range">
+              <tr >
+                <th class="bmi_table_title" colspan="2">成人肥胖定義</th>
+                <th  class="bmi_table_title" colspan="2">身體質量BMI</thvc>
+              </tr>
+              <tr>
+                <td class="bmi_table_light" colspan="2">過輕</td>
+                <td class="bmi_table_light" colspan="2">BMI < 18.5</td>
+              </tr>
+              <tr>
+                <td class="bmi_table_health"colspan="2">健康</td>
+                <td class="bmi_table_health" colspan="2">18.5 ≤ BMI ≤ 24.5</td>
+              </tr>
+              <tr>
+                <td class="bmi_table_dammger" rowspan="5">異常</td>
+              </tr>
+              <tr>
+                <td class="bmi_table_dammger">過重</td>
+                <td class="bmi_table_dammger">24 ≤ BMI < 27</td>
+              </tr>
+              <tr>               
+                <td class="bmi_table_dammger">輕度肥胖</td>
+                <td class="bmi_table_dammger">27 ≤ BMI < 30</td>
+              </tr>
+              <tr>
+                <td class="bmi_table_dammger">中度肥胖</td>
+                <td class="bmi_table_dammger">3 ≤ BMI < 35</td>
+              </tr>
+              <tr>
+                <td class="bmi_table_dammger">重度肥胖</td>
+                <td class="bmi_table_dammger">BMI  ≥  35</td>
+              </tr>
+            </table>
+          <label id="your_bmi">你的BMI是: </label>
+          <label id="bmi_result"></label>
+        </div>
+      </div>
+      <div id="menu_list">
+        <div id="menu_list_TitleDiv">
+          <label class="menu_list_title">全部</label>
+          <label class="menu_list_title">我的最愛</label>
+          <label class="menu_list_title" id="memu_list_title_search">&#128269;</label>
+          <a id="menu_list_cancle">&#10539;</a>
+        </div>
+        <div  id="menu_list_searchBlock" >
+          <div id="menu_list_searchBlock_3">
+            <label class ="search_all" id="searchBlock_reach">搜尋:</label><input type="text" id="searchBlock_text" class ="search_all">
+            <label   id="searchBlock_type" class ="search_all">類型:</label>
+            <select id="type_list"name="type"class ="search_all">
+              <option>生活</option>
+              <option>工業</option>
+              <option>娛樂</option>
+              <option>算命</option>
+              <option>稅率</option>
+            </select>
+            <label class ="search_all" id="searchBlock_list">排列:</label>
+            <div id="search_list_icon" class ="search_all"><a>&#9783;</a></div>
+          </div>
+        </div>
+        <div  id="menu_list_content">
+          <a href="./bmicalculate.html">
+            <div class="menu_list_content_box" id="menu_bmi">BMI</div>
+          </a>
+          <a href="./bmrcalulate.html">
+            <div class="menu_list_content_box" id="menu_bmr">BMR</div>
+          </a>
+          <a href="./heatcalculate.html">
+            <div class="menu_list_content_box" id="menu_heat">HEAT</div>
+          </a>
+          <a href="./absi.html">
+            <div class="menu_list_content_box" id="menu_absi">ABSI</div>
+          </a>
+        </div>
+      </div>
+      
+      
+ 
+
+<!-- 卡路里計算器 -->
+<!-- 樂透冥牌機 -->
+<!-- 計算機 -->
+<!-- 一個人的黑白配 -->
+<!-- 一個人擲骰子  -->
+<!-- 一個人也能的分組模擬器 -->
+<!-- 擲筊 -->
+<!-- 抽獎機 -->
+<!-- 俄羅斯輪盤機 -->
+<!-- 抽卡模擬器 -->
+<!-- 匯率計算器 -->
+<!-- 所得稅計算器 -->
+<!-- 房屋稅計算器 -->
+<!-- 時薪計算器 -->
+<!-- 牌照稅計算器 -->
+<!-- 稅金計算器 -->
+<!-- 房貸計算器 -->
+<!-- 單位計算器 -->
+<!-- 日期計算器 -->
+<!-- 信用貸款計算器 -->
+<!-- 股票交易計算機 -->
+<!-- 勞工個人退休金試算表 -->
+<!-- 紫微斗數計算器 -->
+<!-- 給女性的排卵日工具 -->
+<!-- 孕婦預產期計算器 -->
+<!------------------------------------------------------->
+    <!-- 程式碼設計佔放區 -->
+    <script src="javascript.js"></script>
+  </body>
+</html>
